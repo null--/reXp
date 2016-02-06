@@ -1,17 +1,27 @@
 # reXp
 A collection of my codes and files I use in my reverse engineering workshops and classes.
 
-What a reverse engineer expected to know.
-## General Info
-Executable file types
+## TODO
+Automake script for ARM 32/64, Linux 32/64, Win 32/64, OSX 32/64 with and without optimization
 
-From C to assembly
+Upload C++::Class source codes
+
+Upload Sharif-UT Workshop source codes
+
+Upload Tehran-UT CTF source code
+
+
+###### What a reverse engineer expected to know "IN-DEPTH".
+## General Info
+Executable files formats
+
+From C to assembly to disassembly!
 
 Endian
 
 ## Dissassembly (of your targeted COMPILER/OS/CPU)
 ### Variables
-Stack and its growth
+Stack (and its growth)
 
 Variables (Local vs Global)
 

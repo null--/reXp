@@ -1,0 +1,58 @@
+Help:                                   ?
+Search:                                 /?
+
+General
+  Load Project:                         r2 -p /or/ Po
+  Print Entry Point:                    ie
+  File Info:                            iI
+  Strings:                              iz, izz
+  Imports:                              ii
+  Libs:                                 il
+
+Analyse:
+  Full Analyse:                         aa /or/ r2 -A
+  List Flags:                           f
+  Print Function:                       pdf @ (fcn)
+  Rename Flag:                          fr
+  First 3 instructions:                 pd 3@sym.main
+  Seek to address:                      s (address/fcn)
+  Seek undo/redo:                       s+/s-
+  Print graph of current function:      afg
+  Print graph of current address:       sgv
+  Hex dump of current address:          x
+
+Data:
+  Rename a variable:                    afvn
+  Rename an argument:                   afan
+  Change a variable type:               afvt
+  Define data type:                     to - /Define c type using typedef/
+  List types:                           t
+  Define/Undefine as code:              C-
+  Define as data:                       Cd
+  Define as string:                     Cs
+  Define as struct:                     Cf
+  Comment:                              CC
+  Copy n bytes:                         y n
+  Paste n byte:                         yy
+  Print yank buffer:                    yp
+
+Write:
+  Write opcode:                         wa push eax
+  Modify opcode:                        wao jne
+  Write nop                             wx 90
+  
+Emulator:
+  Load esil:                            aei
+  Single step:                          aes
+  Analyse first 5 opcodes:              ao 5
+  
+Debug:
+  Run debugger:                         r2 -d (file or pid)
+  List breakpoints:                     db
+  Add Breakpoint:                       db @(symbolic address) /or/ db address
+  Show 
+
+Note:
+This is my most used commands. for a more complete set of shortcuts visit:
+https://github.com/pwntester/cheatsheets/blob/master/radare2.md
+
