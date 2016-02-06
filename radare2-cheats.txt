@@ -50,7 +50,6 @@ Debug:
   Run debugger:                         r2 -d (file or pid)
   List breakpoints:                     db
   Add Breakpoint:                       db @(symbolic address) /or/ db address
-  Show 
 
 Note:
 This is my most used commands. for a more complete set of shortcuts visit:
