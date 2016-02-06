@@ -1,0 +1,28 @@
+Note: Just a quick reference, DO NOT RELY ON IT ALL THE TIME, it might be wrong sometimes.
+
+[epb+X]                                   ; Argument at X
+
+[ebp-X]                                   ; Variable at X (or direct access to an element of an array)
+
+[epb+eax*4-X]                             ; #eax element of the array at X
+
+lea eax, [ebp - X]                        ; Load the address of local var (or address of 1st element of an array) at X
+mov dword [ebp - Y], eax                  ; Load the address of local var at X and store it at local pointer at Y
+
+push X
+call *malloc*
+add esp, 0x10                             ; (Might not be there!)
+mov dword [ebp - Y], eax                  ; Define a dynamic array of size X/4 (X/sizeof_Data) at Y
+
+mov eax, dword [ebp - X]
+add eax, Y                                ; Load address of Y/4 element of a dynamic array at X
+mov eax, dword [eax]                      ; Access to the value of that element
+
+fld qword [X]                             ; (Load into FPU stack)
+fstp qword [ebp - Y]                      ; Load the C::double value at X into C::double variable at Y
+
+mov dword [ebp - 0x28], 0x3c8abac0
+mov dword [ebp - 0x24], 0x462d5
+mov word [ebp - 0x2a], 0
+mov byte [ebp - 0x2b], 0x41               ; Loading a long long int value and I have nothing more to say!!!
+

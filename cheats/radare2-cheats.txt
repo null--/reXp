@@ -8,6 +8,8 @@ General
   Strings:                              iz, izz
   Imports:                              ii
   Libs:                                 il
+  Evaluate math exp:                    ? 0x23 + 12
+  Start Web:                            =h /or/ =H to start with current project
 
 Analyse:
   Full Analyse:                         aa /or/ r2 -A
@@ -20,6 +22,8 @@ Analyse:
   Print graph of current function:      afg
   Print graph of current address:       sgv
   Hex dump of current address:          x
+  Print 12 bytes at given address:      px 12@str.Hello_String_ /or/ px 12@0x80487f0 
+  Print a decimal/dword/qword:          pxd 4@XXX /,/ pxw 4@XXX /,/ pxq 8@XXX
 
 Data:
   Rename a variable:                    afvn
@@ -36,7 +40,7 @@ Data:
   Paste n byte:                         yy
   Print yank buffer:                    yp
 
-Write:
+Write: (Don't forget -w flag)
   Write opcode:                         wa push eax
   Modify opcode:                        wao jne
   Write nop                             wx 90
@@ -54,4 +58,6 @@ Debug:
 Note:
 This is my most used commands. for a more complete set of shortcuts visit:
 https://github.com/pwntester/cheatsheets/blob/master/radare2.md
+https://github.com/radare/radare2/wiki/Migration-from-ida-or-GDB
+https://github.com/radare/radare2/blob/master/doc/fortunes.tips
 
