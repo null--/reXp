@@ -4,6 +4,8 @@ A collection of my codes and files I use in my reverse engineering workshops and
 ## TODO
 Automake script for ARM 32/64, Linux 32/64, Win 32/64, OSX 32/64 with and without optimization
 
+Update x86/gcc cheats
+
 Upload C++::Class source codes
 
 Upload Sharif-UT Workshop source codes
